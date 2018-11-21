@@ -1,6 +1,6 @@
 from tkinter import *  # 导入 Tkinter 库
 
-root = Tk()  # 创建窗口对象的背景色
+root = Tk(screenName="aaa")  # 创建窗口对象的背景色
 # 创建两个列表
 li = ['C', 'python', 'php', 'html', 'SQL', 'java']
 movie = ['CSS', 'jQuery', 'Bootstrap']
@@ -14,4 +14,4 @@ for item in movie:  # 第二个小部件插入数据
 
 listb.pack()  # 将小部件放置到主窗口中
 listb2.pack()
-root.mainloop()  # 进入消息循环
+root.mainloop()  # 进入消息循环入消息循环
