@@ -1,17 +1,15 @@
-from tkinter import *  # 导入 Tkinter 库
+import sys
+from tkinter import * 
 
-root = Tk(screenName="aaa")  # 创建窗口对象的背景色
-# 创建两个列表
-li = ['C', 'python', 'php', 'html', 'SQL', 'java']
-movie = ['CSS', 'jQuery', 'Bootstrap']
-listb = Listbox(root)  # 创建两个列表组件
-listb2 = Listbox(root)
-for item in li:  # 第一个小部件插入数据
-    listb.insert(0, item)
+#----------------------------------------------------------------------
+def onclick(msg):
+    """点击事件"""
+    print(msg,"我被点击了！")
+    sys.exit(0)
+    
 
-for item in movie:  # 第二个小部件插入数据
-    listb2.insert(0, item)
-
-listb.pack()  # 将小部件放置到主窗口中
-listb2.pack()
-root.mainloop()  # 进入消息循环入消息循环
+root=Tk()
+text=Label(root,text="Hello the world!")
+text.pack(side=TOP,fill=BOTH,expand=YES)
+Button(root,text="按钮",command=(lambda:onclick("Hello"))).pack(side=LEFT)
+root.mainloop()
