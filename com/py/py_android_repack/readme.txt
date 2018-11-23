@@ -1,0 +1,3 @@
+pyinstaller
+不能用_init_.py
+文件中要有与文件名相同的方法入口
