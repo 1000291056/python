@@ -178,7 +178,7 @@ class FileUtil:
         #self.progress_lable.grid(row=5,column=0)
         #第六行
         #image_bg=Image.open(r"D:\project\ffw\python\img\t.jpg")
-        Button(self.root,text="确定",bd=2,width=25,bg="green",command=(lambda:self.exitUiAndStart(old_apk_path_entry.get(),so_path_entry.get(),keystore_entry.get(),keystore_passwd_entry.get()))).grid(row=6,pady=5)
+        Button(self.root,text="确定",bd=2,width=25,bg="green",command=(lambda:self.exitUiAndStart(old_apk_path_entry.get(),so_path_entry.get(),keystore_entry.get(),keystore_passwd_entry.get()))).grid(row=6,column=1)
         pass
         self.root.mainloop()
     #----------------------------------------------------------------------
